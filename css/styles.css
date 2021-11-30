@@ -676,15 +676,15 @@ transition: transform 1000ms;
 .modal-form-input{
     width: 100%;
     height:23px ;
-    border: ;
-    border-radius: ;
+    border: 1px  solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
     padding-left: 15px;
     padding-right: 15px;
-    /* outline: none; */
+    outline: none;
 }
-.modal-form-input: hover,
-.modal-form-input: focus {
-    
+.modal-form-input:hover,
+.modal-form-input:focus {
+  border-color: var(--one);
 }
 .modal-form-input::placeholder{
     
@@ -693,5 +693,21 @@ transition: transform 1000ms;
 .modal-form-text{
 padding: 12px 16px;
 width: 100%;
+border: 1px  solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+outline: none;
     resize: none;
+}
+.modal-form-text:focus,
+.modal-form-text:hover{
+    border-color: var(--one);
+}
+.form-conditions{
+   border: none;
+}
+.form-conditions>a{
+    text-decoration:underline;
+}
+.form-conditions-check{
+
 }
