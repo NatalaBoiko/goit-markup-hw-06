@@ -443,6 +443,36 @@
                 <use href="./images/symbol-defs.svg#icon-close" ></use>
             </svg>
         </button>
+
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form action="#" class="modal-form">
+            
+            <label for="user-name" class="form-input-text">Имя</label>
+            <input type="text" id="user-name"
+             class="modal-form-input" minlength="2">
+            
+
+            <label for="user-tel" class="form-input-text">Телефон</label>
+            <input type="tel" id="user-tel"
+             class="modal-form-input"  required  >
+            
+
+             <label for="user-email" class="form-input-text">Почта</label>
+            <input type="email" id="user-email" 
+            class="modal-form-input" >
+
+            <label for="user-text" class="form-input-text">Комментарий</label>
+            <textarea name="" id="user-text" cols="30" rows="10"  class="modal-form-text"
+            placeholder="Введите текст"></textarea>
+
+            <fieldset>
+                <label for=""></label>
+                <input type="checkbox" id="" >
+                <label for="">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> </label>
+            </fieldset>
+        
+            <button type="submit"> Отправить</button>
+        </form>
     </div>
 </div>
 <script src="./js/modal.js"></script>
