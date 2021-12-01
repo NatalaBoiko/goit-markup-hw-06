@@ -451,8 +451,8 @@
             
         </div>
         </footer>
-        <!-- is-hidden -->
-<div class="backdrop  " data-modal>
+        
+<div class="backdrop is-hidden " data-modal>
     <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
             <svg class="modal-close-icon">
@@ -469,7 +469,7 @@
             <input type="text" id="user-name"
              class="modal-form-input" minlength="2"  placeholder=" " >
              <svg class="modal-form-icon"> 
-                 <use href="./images/symbol-defs.svg#icon-person" wight="12" height="12"></use>
+                 <use href="./images/symbol-defs.svg#icon-person" ></use>
                   </svg>
                   
                 </div>
@@ -479,7 +479,7 @@
                   <input type="tel" id="user-tel"
                   class="modal-form-input"  required  >
                   <svg class="modal-form-icon"> 
-                    <use href="./images/symbol-defs.svg#icon-phone" wight="13" height="13"></use>
+                    <use href="./images/symbol-defs.svg#icon-phonem" ></use>
                      </svg>
             </div>
 
@@ -488,7 +488,7 @@
                  <input type="email" id="user-email" 
                  class="modal-form-input" >
                  <svg class="modal-form-icon"> 
-                    <use href="./images/symbol-defs.svg#icon-envelope" wight="15" height="12"></use>
+                    <use href="./images/symbol-defs.svg#icon-envelope" ></use>
                      </svg>
             </div>
 
@@ -496,11 +496,14 @@
             <textarea name="" id="user-text" cols="30" rows="10"  class="modal-form-text"
             placeholder="Введите текст"  ></textarea>
 
-            <fieldset class="form-conditions">
-                
-                <input type="checkbox" id=""  class="form-conditions-check">
-                <label for="" >Соглашаюсь с рассылкой и принимаю <a href="" class="form-conditions-linc">Условия договора</a> </label>
+            <fieldset class="form-conditions">           
+                <input type="checkbox" id="agree"  class="checkbox">
+                <svg  class="checkbox-icon">
+                    <use href="./images/symbol-defs.svg#icon-check"></use>
+                   </svg>
+                <label for="agree" >Соглашаюсь с рассылкой и принимаю <a href="" class="form-conditions-linc">Условия договора</a> </label>
             </fieldset>
+     
         
             <button type="submit" class="modal-submit-btn"> Отправить</button>
         </form>
