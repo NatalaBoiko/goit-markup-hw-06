@@ -661,7 +661,6 @@ fill: var(--two);
 width: 24px;
 height: 24px;
 margin-left: 10px;
-
 }
 
 
@@ -749,30 +748,35 @@ justify-content: center;
     height:23px ;
     border: 1px  solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    padding-left: 15px;
+    padding-left: 42px;
     padding-right: 15px;
     margin-bottom: 10px;
     outline: none;
     transition-property:border-color ;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--timing-function);
-    
+    /* position: relative; */
 }
-.modal-form-input:hover,
-.modal-form-input:focus {
+.modal-form-input:hover ,
+.modal-form-input:focus  {
   border-color: var(--one);
+  
 }
-/* .form-field{
+.form-field{
     position: relative;
 }
-.modal-form-icon{
-width: 12px;
-height: 12px;
+.modal-form-icon{ 
 position: absolute;
-top: 45%;
-left: 15px;
-} */
+fill: #212121;
+top: 24px;
+left: -130px;
+}
 
+.modal-form-input:hover + .modal-form-icon,
+.modal-form-input:focus + .modal-form-icon  {
+  fill:var(--one);
+
+}
 .modal-form-text{
 padding: 12px 16px;
 width: 100%;
