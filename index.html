@@ -465,31 +465,37 @@
 
         <form action="#" class="modal-form">
             <div class="form-field">
+                
             <label for="user-name" class="form-input-text">Имя</label>
+            <div class="input-wrap">
             <input type="text" id="user-name"
              class="modal-form-input" minlength="2"  placeholder=" " >
              <svg class="modal-form-icon"> 
                  <use href="./images/symbol-defs.svg#icon-person" ></use>
                   </svg>
-                  
+                </div>
                 </div>
 
               <div class="form-field">
                   <label for="user-tel" class="form-input-text">Телефон</label>
+                  <div class="input-wrap">
                   <input type="tel" id="user-tel"
                   class="modal-form-input"  required  >
                   <svg class="modal-form-icon"> 
                     <use href="./images/symbol-defs.svg#icon-phonem" ></use>
                      </svg>
+                    </div>
             </div>
 
              <div class="form-field">
                   <label for="user-email" class="form-input-text">Почта</label>
+                  <div class="input-wrap">
                  <input type="email" id="user-email" 
                  class="modal-form-input" >
                  <svg class="modal-form-icon"> 
                     <use href="./images/symbol-defs.svg#icon-envelope" ></use>
                      </svg>
+                    </div>
             </div>
 
             <label for="user-text" class="form-input-text" >Комментарий</label>
@@ -498,9 +504,11 @@
 
             <fieldset class="form-conditions">           
                 <input type="checkbox" id="agree"  class="checkbox">
+                <span class="checkbox-icon-border">
                 <svg  class="checkbox-icon">
                     <use href="./images/symbol-defs.svg#icon-check"></use>
                    </svg>
+                </span>
                 <label for="agree" >Соглашаюсь с рассылкой и принимаю <a href="" class="form-conditions-linc">Условия договора</a> </label>
             </fieldset>
      
