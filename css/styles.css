@@ -821,60 +821,64 @@ transition-timing-function: var(--timing-function);
     color: rgba(117, 117, 117, 0.5);
 }
 
-.form-conditions{
-   border: none;
-   display: flex;
-   justify-content: center;
-   font-style: regular;
-   font-weight: 400;
-   font-size: 14px;
-   letter-spacing: 3%;
-   color: var(--light);
-   margin-bottom: 30px;
-   position: relative;
-}
-.form-conditions-linc{
-    text-decoration:underline;
+
+.checkbox-label{
+    display: flex;
+    justify-content: center;
+    font-style: regular;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 3%;
     color: var(--light);
-    transition-property:color;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--timing-function);
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.checkbox-label:hover  .checkbox-icon,
+.checkbox-label:focus  .checkbox-icon{
+    border-color: var(--one);
 }
 
 .checkbox{    
     appearance:none ;
     -webkit-appearance:none ;
     -moz-appearance:none ;
-position: absolute;
+    position: absolute;
 }
 
-.checkbox-icon-border{
-    width: 16px;
-    height: 15px;
-    border: 2px solid var(--full);
-    border-radius: 1px;
-    margin-right: 8.38px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition-property:background-color, border-color;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--timing-function);
+.checkbox:checked + .checkbox-icon{
+    background-color: var(--one);
+    border-color: var(--one);
+    }
+
+.checkbox-icon{
+display: flex;
+width: 16px;
+height: 15px;
+border: 2px solid var(--full);
+border-radius: 4px;
+margin-right: 8.38px;
+justify-content: center;
+align-items: center;
+transition-property:background-color, border-color;
+transition-duration: var(--transition-duration);
+transition-timing-function: var(--timing-function);
 }
-.checkbox-icon{    
+.icon-check{
     width: 11px;
     height: 8px;
-
-    
-}
-.form-conditions:focus  .checkbox-icon-border,
-.form-conditions:hover  .checkbox-icon-border{
-    border-color: var(--one);
 }
 
-.checkbox:checked + .checkbox-icon-border{
-    border: var(--one);
-    background-color: var(--one);
+
+
+
+.form-conditions-linc{
+    text-decoration:underline;
+    color: var(--light);
+    margin-left: 3px;
+    transition-property:color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--timing-function);
 }
 
 .modal-submit-btn{
