@@ -850,7 +850,10 @@ transition-timing-function: var(--timing-function);
     background-color: var(--one);
     border-color: var(--one);
     }
-
+    .checkbox:focus + .checkbox-icon{
+        
+        border-color: var(--one);
+        }
 .checkbox-icon{
 display: flex;
 width: 16px;
@@ -874,7 +877,7 @@ transition-timing-function: var(--timing-function);
 
 .form-conditions-linc{
     text-decoration:underline;
-    color: var(--light);
+    color: var(--one);
     margin-left: 3px;
     transition-property:color;
     transition-duration: var(--transition-duration);
